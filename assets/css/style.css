@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oswald', sans-serif;
+}
+p,
+span,
+small,
+button,
+a {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+  background-color: #ecf0f1;
+}
+.nav-link:hover {
+  background-color: #dadada;
+}
+#home {
+  background: url('../img/home-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#attractions {
+  background: url('../img/attractions-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#map {
+  background: url('../img/map-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#about {
+  background: url('../img/about-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#wildatlanticway {
+  background: url('../img/attractions-2.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+#aranislands {
+  background: url('../img/attractions-3.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+#burren {
+  background: url('../img/attractions-4.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+#brogans {
+  background: url('../img/local-2.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  filter: grayscale(100%);
+  transition: filter 1s ease-in-out;
+}
+#brogans:hover {
+  filter: grayscale(0%);
+}
+#noras {
+  background: url('../img/local-1.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  filter: grayscale(100%);
+  transition: filter 1s ease-in-out;
+}
+#noras:hover {
+  filter: grayscale(0%);
+}
+#hotel {
+  background: url('../img/local-3.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  filter: grayscale(100%);
+  transition: filter 1s ease-in-out;
+}
+#hotel:hover {
+  filter: grayscale(0%);
+}
+.vignette:after {
+  content: '';
+  position: absolute;
+  border-radius: 0.5rem;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  background: radial-gradient(circle, transparent 50%, black 150%);
+  opacity: 100%;
+  -webkit-transition: opacity 1s ease-out;
+  -moz-transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+}
+.vignette:hover:after {
+  opacity: 0%;
+}
+.text-shadow {
+  text-shadow: 2px 2px 3px black;
+}
+.force-white {
+  color: white !important;
+}
+.bi {
+  margin: 0.3em;
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+.icon-link > .bi {
+  margin-top: 0.125rem;
+  margin-left: 0.125rem;
+  fill: currentcolor;
+  transition: transform 0.25s ease-in-out;
+}
