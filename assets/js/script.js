@@ -59,4 +59,8 @@ const slider = {
     },
   },
 }
-document.onload = slider.task.start()
+document.onload = () => {
+  if (document.getElementById('slider')) {
+    slider.task.start()
+  }
+}
