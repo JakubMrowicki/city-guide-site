@@ -11,12 +11,16 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <title>Home | Ennis Guide</title>
   </head>
   <body>
     <div class="container-fluid p-0 m-0 d-flex flex-column min-vh-100">
       <div class="container">
-        <header
+        <nav
           class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
         >
           <a
@@ -68,7 +72,7 @@
               <a href="contact.html" class="nav-link">Contact</a>
             </li>
           </ul>
-        </header>
+        </nav>
       </div>
       <div class="bg-secondary py-5 mb-4" id="home">
         <h1 class="text-center text-light">
@@ -76,6 +80,19 @@
         </h1>
       </div>
       <div class="container py-3 px-4">
+        <div class="slider mb-4" id="slider">
+          <div id="band" class="d-none d-sm-flex align-items-center">
+            <div id="text" class="flex-grow-1"></div>
+            <div class="controls">
+              <button class="btn" id="prev" onclick="slider.task.prev();">
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <button class="btn" id="next" onclick="slider.task.next();">
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
         <h2 class="pb-2 border-bottom">Welcome to Ennis</h2>
         <p>
           Welcome to Ennis, a charming and historic city located in County

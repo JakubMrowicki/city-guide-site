@@ -12,11 +12,27 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>About | Ennis Guide</title>
+    <style>
+      #wiki {
+        width: 100%;
+      }
+      #wiki tr:nth-child(odd) {
+        background-color: lightgrey;
+      }
+      #wiki th {
+        color: white;
+        background-color: #0d6efd;
+      }
+      #wiki tr:hover {
+        border: 1px black solid;
+        border-style: inset;
+      }
+    </style>
   </head>
   <body>
     <div class="container-fluid p-0 m-0 d-flex flex-column min-vh-100">
       <div class="container">
-        <header
+        <nav
           class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
         >
           <a
@@ -66,7 +82,7 @@
               <a href="contact.html" class="nav-link">Contact</a>
             </li>
           </ul>
-        </header>
+        </nav>
       </div>
       <div class="bg-secondary py-5 mb-4" id="about">
         <h1 class="text-center text-light">
@@ -74,6 +90,15 @@
         </h1>
       </div>
       <main class="container px-4">
+        <div class="row">
+          <div class="col-md-12">
+            <video
+              class="img-fluid"
+              src="./assets/video/ennis.mp4"
+              controls
+            ></video>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-6 offset-md-3">
             <h2 class="border-bottom">History of Ennis</h2>
@@ -106,6 +131,41 @@
               throughout the year, which celebrate the city's rich musical
               heritage, and attract visitors from all over the world.
             </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <h2 class="border-bottom">Additional Information</h2>
+            <table id="wiki">
+              <tr>
+                <th>Item</th>
+                <th>Detail</th>
+              </tr>
+              <tr>
+                <td>Country</td>
+                <td>Ireland</td>
+              </tr>
+              <tr>
+                <td>Province</td>
+                <td>Munster</td>
+              </tr>
+              <tr>
+                <td>County</td>
+                <td>Clare</td>
+              </tr>
+              <tr>
+                <td>Elevation</td>
+                <td>3 m (10 ft)</td>
+              </tr>
+              <tr>
+                <td>Population (2016)</td>
+                <td>25,276</td>
+              </tr>
+              <tr>
+                <td>Demonym</td>
+                <td>Ennisite</td>
+              </tr>
+            </table>
           </div>
         </div>
       </main>

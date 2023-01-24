@@ -127,3 +127,32 @@ body {
   fill: currentcolor;
   transition: transform 0.25s ease-in-out;
 }
+.slider {
+  aspect-ratio: 16/9;
+  background-image: url(../img/attractions-1.jpg);
+  background-size: cover;
+  position: relative;
+  border-radius: 10px;
+}
+.slider #band {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0px 0px 10px 10px;
+}
+#band #text {
+  font-size: large;
+}
+.controls {
+  float: right;
+}
+.controls button {
+  color: white;
+}
+.controls button:hover {
+  color: darkgrey;
+}
